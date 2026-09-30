@@ -1,0 +1,50 @@
+# Blok keluaran yang tercetak di Bab 6 (bab06-skala.tex).
+# Diperiksa oleh periksa.py terhadap kode/bab06_*.py.
+
+=== blok 1 ===
+data anggur: 178 x 13, kelas [59 71 48]
+fitur      rentang            bagian varians (%)
+proline     278.00 - 1680.00   99.77384
+magnesium    70.00 -  162.00   0.20524
+alcalinit    10.60 -   30.00   0.01122
+hue           0.48 -    1.71   0.00005
+
+=== blok 2 ===
+akurasi validasi silang 5 lipatan:
+penskalaan         k=1     k=5     k=15
+tanpa              0.7135  0.6744  0.6919
+proline saja       0.6581  0.6689  0.6916
+pembakuan (z)      0.9438  0.9606  0.9610
+min-max            0.9608  0.9440  0.9776
+robust             0.9381  0.9384  0.9667
+
+=== blok 3 ===
+bocor : rata-rata 0.9663
+jujur : rata-rata 0.9651
+selisih rata-rata +0.0011, lipatan yang berbeda 5 dari 50
+data acak 100 x 2000, pilih 20 fitur, 5-NN:
+  pilih di luar validasi silang : 0.8600
+  pilih di dalam pipeline       : 0.5300
+
+=== blok 4 ===
+m fitur noise   akurasi 5-NN (rata-rata 10 ulangan)
+   0            0.9606
+   5            0.9523
+  13            0.9445
+  26            0.9272
+  52            0.8702
+ 104            0.8057
+
+=== blok 5 ===
+peluang bertukar urutan, Delta = 6:
+  m    simulasi   teori Phi(-Delta/sqrt(12 m))
+   3   0.1290     0.1587
+  12   0.2983     0.3085
+  48   0.4001     0.4013
+ 192   0.4486     0.4503
+
+=== blok 6 ===
+data              pembakuan  whitening
+anggur            0.9606     0.9098
+anggur + 26 noise 0.9272     0.6792
+nilai eigen (dibakukan): terbesar 4.732, terkecil 0.1040

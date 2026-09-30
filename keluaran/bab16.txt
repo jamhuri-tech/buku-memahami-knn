@@ -1,0 +1,37 @@
+# Blok keluaran yang tercetak di Bab 16 (bab16-hampiran.tex).
+# Diperiksa oleh periksa.py terhadap kode/bab16_*.py.
+
+=== blok 1 ===
+   k    rasio min   rasio maks   bagian |rasio-1| > 0,1
+   50     0.616       1.455         0.3267
+  200     0.792       1.197         0.0408
+ 1000     0.904       1.108         0.0000
+ 4000     0.955       1.045         0.0000
+
+=== blok 2 ===
+angka di R^5000, 5-NN tanpa proyeksi: akurasi 0.9800
+  sesudah proyeksi ke k =   5: akurasi 0.6356
+  sesudah proyeksi ke k =  10: akurasi 0.8933
+  sesudah proyeksi ke k =  20: akurasi 0.9489
+  sesudah proyeksi ke k =  50: akurasi 0.9733
+  sesudah proyeksi ke k = 200: akurasi 0.9800
+kelas berdekatan di R^5000, 5-NN: akurasi 0.358
+  sesudah proyeksi ke k =  100: akurasi 0.112
+  sesudah proyeksi ke k = 1000: akurasi 0.170
+
+=== blok 3 ===
+sudut   simulasi   1 - theta/pi
+  10    0.9446     0.9444
+  30    0.8338     0.8333
+  60    0.6662     0.6667
+  90    0.5003     0.5000
+ 135    0.2498     0.2500
+
+=== blok 4 ===
+  r   b   recall@10   bagian data diperiksa
+  4   1     0.449        0.073
+  8   1     0.138        0.007
+  8   5     0.540        0.041
+  8  20     0.933        0.143
+ 12  20     0.689        0.032
+ 16  50     0.695        0.021

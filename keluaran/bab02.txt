@@ -1,0 +1,25 @@
+# Blok keluaran yang tercetak di Bab 2 (bab02-geometri.tex).
+# Diperiksa oleh periksa.py terhadap kode/bab02_*.py.
+
+=== blok 1 ===
+u.v = 4, ||u|| = 3, ||v|| = 2.2361
+cos sudut = 0.5963, sudut = 53.40 derajat
+
+=== blok 2 ===
+nilai eigen: [1. 3.]  vektor eigen (kolom):
+[[-0.7071  0.7071]
+ [ 0.7071  0.7071]]
+Sigma^(-1/2) =
+[[ 0.7887 -0.2113]
+ [-0.2113  0.7887]]
+periksa: S^(-1/2) S S^(-1/2) = [[1.0, 0.0], [0.0, 1.0]]
+Cholesky [[4,2],[2,5]]: [[2.0, 0.0], [1.0, 2.0]]
+
+=== blok 3 ===
+Gamma(0.5) = 1.772454
+Gamma(1) = 1.000000
+Gamma(1.5) = 0.886227
+Gamma(2) = 1.000000
+Gamma(2.5) = 1.329340
+Gamma(5) = 24.000000
+sqrt(pi) = 1.772454, 3 sqrt(pi)/4 = 1.329340

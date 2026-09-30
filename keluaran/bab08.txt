@@ -1,0 +1,29 @@
+# Blok keluaran yang tercetak di Bab 8 (bab08-coverhart.tex).
+# Diperiksa oleh periksa.py terhadap kode/bab08_*.py.
+
+=== blok 1 ===
+    n   p=1: simulasi  1/(2(n+1))   p=2      p=10
+    9      0.051329    0.050000    0.1593   0.6992
+   99      0.004972    0.005000    0.0501   0.5449
+  999      0.000515    0.000500    0.0159   0.4337
+ 9999      0.000048    0.000050    0.0050   0.3443
+
+=== blok 2 ===
+model      R*       R_NN     2R*(1-R*)
+linear     0.2500   0.3333   0.3750
+tetap      0.1000   0.1800   0.1800
+separuh    0.2500   0.2500   0.3750
+gelombang  0.1356   0.1941   0.2344
+
+=== blok 3 ===
+R* = 0.3704, R_NN = 0.4667
+batas R*(2 - K R*/(K - 1)) = 0.5350, 2R* = 0.7407
+simulasi 1-NN, n = 10000 (50 data latih): 0.4670
+
+=== blok 4 ===
+galat 1-NN (rata-rata 200 data latih; gelombang 20):
+     n    linear   tetap    separuh  gelombang
+    10   0.3386   0.1776   0.2600   0.2520
+   100   0.3358   0.1809   0.2512   0.2002
+  1000   0.3330   0.1806   0.2503   0.1963
+ 10000   0.3336   0.1801   0.2499   0.1946

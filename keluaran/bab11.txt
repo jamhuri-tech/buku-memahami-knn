@@ -1,0 +1,38 @@
+# Blok keluaran yang tercetak di Bab 11 (bab11-bobot.tex).
+# Diperiksa oleh periksa.py terhadap kode/bab11_*.py.
+
+=== blok 1 ===
+k = 3: bobot 1.0000 0.7071 0.4472
+   suara A 1.1543, B 1.0000; predict_proba [0.5358 0.4642]
+k = 5: bobot 1.0000 0.7071 0.4472 0.3536 0.3333
+   suara A 1.4877, B 1.3536; predict_proba [0.5236 0.4764]
+titik uji (3, 2): [1. 0.]
+
+=== blok 2 ===
+gelombang n=400, galat sebenarnya
+  k         seragam           1/d  Epanechnikov
+   1        0.1773        0.1773        0.1773
+   5        0.1437        0.1528        0.1569
+  15        0.1375        0.1417        0.1386
+  31        0.1389        0.1392        0.1369
+  61        0.1430        0.1395        0.1392
+ 121        0.1495        0.1411        0.1421
+radius tetap:
+  r = 0.05: galat 0.1856, bola kosong 0.0489
+  r = 0.10: galat 0.1389, bola kosong 0.0000
+  r = 0.20: galat 0.1411, bola kosong 0.0000
+angka tulisan tangan, akurasi data uji
+  k         seragam           1/d  Epanechnikov
+   1        0.9933        0.9933        0.9933
+   5        0.9800        0.9800        0.9956
+  15        0.9689        0.9689        0.9844
+
+=== blok 3 ===
+k-NN (k)        : galat kuadrat terintegral 0.01062
+k-NN (k - 1)    : galat kuadrat terintegral 0.00970
+kernel Gaussian : galat kuadrat terintegral 0.00660
+integral taksiran k-NN di [-L, L]:
+  L =     5: 1.109
+  L =    50: 1.262
+  L =   500: 1.379
+  L =  5000: 1.496

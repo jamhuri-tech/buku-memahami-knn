@@ -1,0 +1,11 @@
+# Blok keluaran yang tercetak di Bab 1 (bab01-mengapa.tex).
+# Diperiksa oleh periksa.py terhadap kode/bab01_*.py.
+
+=== blok 1 ===
+1797 citra, 64 piksel, 10 kelas
+k =  1: akurasi validasi silang 0.9878
+k =  3: akurasi validasi silang 0.9872
+k =  5: akurasi validasi silang 0.9861
+k = 15: akurasi validasi silang 0.9772
+citra pertama (label 0): ramalan 0, label tetangga [0 0 0]
+jarak ke tiga tetangga: [10.95 12.81 13.11]

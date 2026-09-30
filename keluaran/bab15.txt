@@ -1,0 +1,25 @@
+# Blok keluaran yang tercetak di Bab 15 (bab15-pohon.tex).
+# Diperiksa oleh periksa.py terhadap kode/bab15_*.py.
+
+=== blok 1 ===
+pohon k-d: cocok dengan sklearn 200/200
+   rata-rata 170 jarak per kueri (brute force 3000)
+ball tree: cocok dengan sklearn 200/200
+   rata-rata 479 jarak per kueri (brute force 3000)
+
+=== blok 2 ===
+ daun   simpul pohon   jarak/kueri   simpul dikunjungi/kueri
+    1      19999           11.7            77.1
+    5       4095           54.3            49.5
+   20       1023          135.8            29.3
+   80        255          318.0            17.3
+  320         63          796.8            10.0
+
+=== blok 3 ===
+data              n     p   k-d: titik   ball: titik + pusat
+seragam        10000    2         45           103 +   43
+seragam        10000    4        140           433 +  137
+seragam        10000    8       1093          2973 +  608
+seragam        10000   16       8818          9995 + 1023
+seragam        10000   32      10000         10000 + 1023
+angka           1697   64       1262          1680 +  255

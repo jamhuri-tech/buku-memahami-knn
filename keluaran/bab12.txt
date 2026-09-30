@@ -1,0 +1,35 @@
+# Blok keluaran yang tercetak di Bab 12 (bab12-regresi.tex).
+# Diperiksa oleh periksa.py terhadap kode/bab12_*.py.
+
+=== blok 1 ===
+  k   latih (dengan diri)  x (k/(k-1))^2   LOO (k-1)-NN
+  2      1471.91             5887.63        5887.63
+  6      2551.59             3674.29        3674.29
+ 11      2777.57             3360.85        3360.85
+ 21      2929.74             3230.04        3230.04
+ 41      3166.20             3326.48        3326.48
+
+=== blok 2 ===
+  k   tepi x0=0: simulasi  (k+1)/(2(n+1))   tengah x0=1/2
+  1      0.0099          0.0100          -0.0000
+  9      0.0499          0.0500          -0.0001
+ 19      0.0999          0.1000          -0.0002
+ 49      0.2498          0.2500          -0.0000
+
+=== blok 3 ===
+  k    rata-rata   median   (galat kuadrat terhadap f)
+  5    0.7340      0.2408
+ 15    0.4181      0.0157
+ 31    0.3403      0.0137
+
+=== blok 4 ===
+simpangan baku y: 77.01
+model                    R^2      RMSE
+regresi linear          0.4725   54.88
+k-NN k =  1 (dibakukan) -0.0646   77.87
+k-NN k =  5 (dibakukan) 0.3511   60.68
+k-NN k = 10 (dibakukan) 0.4050   58.37
+k-NN k = 20 (dibakukan) 0.4359   56.95
+k-NN k = 40 (dibakukan) 0.4220   57.67
+k-NN k = 80 (dibakukan) 0.3985   58.93
+k-NN k = 20, bobot 1/d  0.4376   56.83

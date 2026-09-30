@@ -1,0 +1,39 @@
+# Blok keluaran yang tercetak di Bab 7 (bab07-memilihk.tex).
+# Diperiksa oleh periksa.py terhadap kode/bab07_*.py.
+
+=== blok 1 ===
+  k    bias^2    varians   galat harapan (+ sigma^2)
+  1   0.00016   0.09000   0.18016
+  3   0.00024   0.03000   0.12024
+  5   0.00055   0.01800   0.10855
+ 10   0.00326   0.00900   0.10226
+ 20   0.02002   0.00450   0.11452
+ 40   0.06433   0.00225   0.15658
+ 80   0.34676   0.00112   0.43788
+k = 10: rumus 0.10226, simulasi 0.10195
+
+=== blok 2 ===
+  k   P(suara salah)   galat di titik
+  1   0.30000          0.42000
+  3   0.21600          0.38640
+  5   0.16308          0.36523
+ 11   0.07822          0.33129
+ 21   0.02639          0.31056
+ 51   0.00136          0.30055
+101   0.00001          0.30001
+galat Bayes di titik ini: 0.30000
+
+=== blok 3 ===
+k =  1: LOO cepat 0.2050, LeaveOneOut sklearn 0.2050
+k = 15: LOO cepat 0.1300, LeaveOneOut sklearn 0.1300
+k ganjil terbaik menurut:
+  LOO             : k =  15, taksiran 0.1300, benar 0.1375
+  10 lipatan      : k =  21, taksiran 0.1300, benar 0.1373
+  galat sebenarnya: k =  17, taksiran 0.1372, benar 0.1372
+
+=== blok 4 ===
+    n   k*    galat(k*)  galat(sqrt n)  sqrt(n)  n^(2/3)
+  100    11   0.1550     0.1550           10       22
+  400    29   0.1421     0.1432           20       54
+ 1600    79   0.1393     0.1398           40      137
+ 6400   131   0.1374     0.1377           80      345

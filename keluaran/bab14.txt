@@ -1,0 +1,27 @@
+# Blok keluaran yang tercetak di Bab 14 (bab14-cepat.tex).
+# Diperiksa oleh periksa.py terhadap kode/bab14_*.py.
+
+=== blok 1 ===
+||x||^2 sekitar 3.000e+08, jarak^2 rata-rata 5.97
+cara                 galat rel. median   D^2 < 0   1-NN beda
+Gram float64             9.12e-09         0       0
+Gram float32             1.00e+00     22118     199
+langsung float32         2.67e-04         0       0
+sklearn float32          2.67e-04         0       0
+Gram float32 pusat       4.76e-08         0       0
+
+=== blok 2 ===
+   k    simulasi/n   rumus Knuth/n   batas 4n/n
+    1      1.987         1.992          4
+   10      2.042         2.042          4
+  100      2.373         2.372          4
+  500      3.105         3.097          4
+ 1000      3.349         3.359          4
+median, n besar: 2(1 + ln 2) = 3.386
+
+=== blok 3 ===
+500 kueri x 1297 titik latih; blok 101 baris (1.00 MB)
+selisih jarak terbesar dengan sklearn: 8.88e-14
+kueri dengan himpunan tetangga berbeda: 5
+daftar jarak kueri itu sama: True
+matriks jarak penuh n = 1e+06, m = 1e+04: 74.5 GiB

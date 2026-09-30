@@ -1,0 +1,39 @@
+# Blok keluaran yang tercetak di Bab 17 (bab17-prototipe.tex).
+# Diperiksa oleh periksa.py terhadap kode/bab17_*.py.
+
+=== blok 1 ===
+himpunan latih          titik   galat 1-NN sebenarnya
+semua                    1000      0.1985
+kondensasi Hart           376      0.2123
+penyuntingan Wilson       821      0.1530
+suntingan + kondensasi     63      0.1603
+(15-NN pada semua data: 0.1425; galat Bayes 0.1356)
+1-NN pada hasil kondensasi: 0 titik latih salah; 4 lintasan
+
+=== blok 2 ===
+himpunan                     titik   akurasi 1-NN
+semua titik latih             1347    0.9933
+K-Means,  1 per kelas            10    0.8933
+K-Means,  2 per kelas            20    0.9444
+K-Means,  5 per kelas            50    0.9667
+K-Means, 10 per kelas           100    0.9733
+K-Means, 20 per kelas           200    0.9822
+K-Means, 40 per kelas           400    0.9756
+kondensasi Hart                147    0.9644
+penyuntingan Wilson (k=3)     1327    0.9889
+
+=== blok 3 ===
+data latih 1140 titik, bagian kelas 1: 0.097
+        ------ biasa ------   ---- dikoreksi ----
+  k    recall 1   seimbang    recall 1   seimbang
+  1     0.549      0.741       0.549      0.741
+  5     0.562      0.766       0.838      0.824
+ 15     0.547      0.763       0.860      0.840
+ 45     0.417      0.704       0.857      0.850
+
+=== blok 4 ===
+nan_euclidean((1,?,3,4), (2,5,?,6)) = 3.1623
+imputasi        galat nilai (sb)   akurasi 5-NN
+rata-rata            0.986            0.9381
+KNNImputer k=5       0.785            0.9437
+tanpa nilai hilang                      0.9606

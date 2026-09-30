@@ -1,0 +1,22 @@
+# Blok keluaran yang tercetak di Bab 18 (bab18-metrik.tex).
+# Diperiksa oleh periksa.py terhadap kode/bab18_*.py.
+
+=== blok 1 ===
+f(L) = 10.168302; selisih gradien rumus vs beda hingga 2.2e-09
+
+=== blok 2 ===
+transformasi              anggur   anggur + 26 noise
+pembakuan saja            0.9606   0.9100
+whitening                 0.9098   0.7133
+NCA penuh (39 x 39)       0.9665   0.9492
+NCA ke 2 dimensi          0.9776   0.9665
+NCA ke 5 dimensi          0.9610   0.9667
+sklearn NCA, 5 dimensi    0.9663   0.9719
+bagian bobot pada 13 fitur asli (anggur + 26 noise):
+  NCA penuh     : 0.369  (f(L) = 177.0)
+  NCA 5 dimensi : 0.759  (f(L) = 178.0)
+  NCA 2 dimensi : 0.835  (f(L) = 178.0)
+
+=== blok 3 ===
+PCA ke 2 dimensi: akurasi 5-NN data uji 0.5422
+NCA ke 2 dimensi: akurasi 5-NN data uji 0.6644

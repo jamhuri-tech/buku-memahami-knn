@@ -1,0 +1,49 @@
+# Blok keluaran yang tercetak di Bab 5 (bab05-jarak.tex).
+# Diperiksa oleh periksa.py terhadap kode/bab05_*.py.
+
+=== blok 1 ===
+q =  1: ||v||_q = 8.000000
+q =  2: ||v||_q = 5.099020
+q =  4: ||v||_q = 4.287747
+q =  8: ||v||_q = 4.047999
+q = 16: ||v||_q = 4.002494
+q = 64: ||v||_q = 4.000000
+max |v_j|    = 4.000000
+
+=== blok 2 ===
+titik      L1     L2      Linf
+a=(6,0)   6   6.0000   6
+b=(4,4)   8   5.6569   4
+c=(2,5)   7   5.3852   5
+tetangga terdekat menurut L1  : a=(6,0)
+tetangga terdekat menurut L2  : c=(2,5)
+tetangga terdekat menurut Linf: b=(4,4)
+
+=== blok 3 ===
+p = 50, 100000 vektor acak:
+  ||v||_inf <= ||v||_2      : True
+  ||v||_2 <= ||v||_1        : True
+  ||v||_1 <= sqrt(p) ||v||_2: True
+  rasio ||v||_1/||v||_2 terbesar 6.404, batas sqrt(p) = 7.071
+
+=== blok 4 ===
+metrik              k=1     k=3     k=5
+manhattan (q=1)     0.9867  0.9822  0.9756
+euclidean (q=2)     0.9933  0.9933  0.9800
+minkowski q=4       0.9911  0.9911  0.9867
+chebyshev (q=inf)   0.9800  0.9800  0.9733
+cosine              0.9911  0.9889  0.9800
+
+=== blok 5 ===
+v = [1. 1.]: d_M^2 = 0.666667, ||v||^2 = 2.0
+v = [ 1. -1.]: d_M^2 = 2.000000, ||v||^2 = 2.0
+L =
+ [[ 0.816497 -0.408248]
+ [ 0.        0.707107]]
+selisih terbesar Mahalanobis vs Euclid(Lx): 6.72e-15
+
+=== blok 6 ===
+haversine          : 82.243 km
+equirectangular    : 82.243 km (dx 13.23, dy 81.17)
+scikit-learn       : 82.243 km
+derajat sebagai Euclid: 0.7398 derajat

@@ -1,0 +1,34 @@
+# Blok keluaran yang tercetak di Bab 19 (bab19-studikasus.tex).
+# Diperiksa oleh periksa.py terhadap kode/bab19_*.py.
+
+=== blok 1 ===
+20640 kelompok blok, 8 fitur
+label: median 1.797, simpangan baku 1.154
+label yang terpotong di 5.00001: 992
+fitur        median      persentil 99    maksimum
+MedInc           3.53         10.60        15.00
+AveRooms         5.23         10.36       141.91
+Population    1166.00       5805.83     35682.00
+AveOccup         2.82          5.39      1243.33
+lintang rata-rata 35.63, cos = 0.813
+wilayah 0,5 x 0,5 derajat: 176
+koordinat yang dipakai lebih dari satu kelompok blok: 4353
+
+=== blok 2 ===
+model                  acak           wilayah
+rata-rata            1.154           1.162
+regresi linear       0.727           0.739
+k-NN semua fitur     0.632 (k=10)    0.717 (k=10)
+k-NN haversine       0.520 (k=5)     0.932 (k=40)
+k-NN km + s MedInc   0.467 (s=5,k=5) 0.710 (s=20,k=10)
+
+=== blok 3 ===
+RMSE 0.719, R^2 0.612
+jarak ke tetangga ke-10      titik    RMSE
+    2.6 -    12.4              5160    0.657
+   12.4 -    19.2              5160    0.717
+   19.2 -    28.3              5160    0.747
+   28.3 -   142.6              5160    0.751
+label terpotong (5.00001): 992 titik, RMSE 1.548
+   rata-rata ramalan untuk titik itu 3.88
+label biasa: RMSE 0.650

@@ -1,0 +1,19 @@
+# Blok keluaran yang tercetak di Bab 20 (bab20-lanjut.tex).
+# Diperiksa oleh periksa.py terhadap kode/bab20_*.py.
+
+=== blok 1 ===
+ m   awal   recall@1   jarak/kueri (brute force 1597)
+ 5    1      0.085         22.1
+ 5    5      0.385        105.1
+10    1      0.385         51.3
+10    5      0.775        204.2
+20    1      0.665        100.5
+20    5      0.955        344.4
+
+=== blok 2 ===
+AUC jarak ke tetangga ke-10: 0.935
+AUC LOF (k = 10)            : 0.998
+pencilan di antara 20 skor tertinggi: jarak 0, LOF 17
+
+=== blok 3 ===
+korelasi dengan posisi di gulungan: PCA 0.1580, Isomap 0.9999
